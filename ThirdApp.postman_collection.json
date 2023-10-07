@@ -1,0 +1,94 @@
+{
+	"info": {
+		"_postman_id": "2955c26c-b3e6-47af-9b5f-644157526dd2",
+		"name": "Peoples",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17723644"
+	},
+	"item": [
+		{
+			"name": "Register_user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"codeId\": \"100646\",\r\n        \"thirdapp\": \"Johan\",\r\n        \"relation\": \"relation\",\r\n        \"acronym\": \"SVM\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/register_users",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"register_users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit_user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"codeId\": \"1006460\",\r\n        \"thirdapp\": \"Johan Alexis\",\r\n        \"relation\": \"probando\",\r\n        \"acronym\": \"SVO\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/edit",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"edit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/search",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"search"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
